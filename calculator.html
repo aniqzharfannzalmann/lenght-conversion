@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Conversion Calculator</title>
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Length Conversion Calculator</h1>
+        <p>Perform calculations for length conversion.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Length Conversion</h2>
+        <p>This page will allow you to calculate and solve length conversions.</p>
+        <!-- Add your length conversion calculator form and input fields here -->
+        <form id="lengthConversionForm">
+            <label for="inputValue">Enter Length (in meters):</label>
+            <input type="text" id="inputValue" />
+            <label for="conversionType">Select Conversion Type:</label>
+            <select id="conversionType">
+                <option value="metersToFeet">Meters to Feet</option>
+                <option value="feetToMeters">Feet to Meters</option>
+                <!-- Add more conversion options as needed -->
+            </select>
+            <button type="button" onclick="calculateLengthConversion()">Calculate</button>
+            <p id="result">Result will appear here.</p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
